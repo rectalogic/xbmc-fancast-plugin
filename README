@@ -1,0 +1,5 @@
+XBMC Fancast Plugin
+
+Plugin for XBMC or Boxee to provide Fancast content.
+
+Move to plugins/video directory of XBMC or Boxee then update sources.xml.
