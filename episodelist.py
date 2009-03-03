@@ -49,7 +49,7 @@ class EpisodeList:
                         if (filterValue != tagValue):
                             next
 
-                    title = xml.getChildData(item, mediaNS, 'title')
+                    title = (xml.getChildData(item, mediaNS, 'title')).encode("utf-8")
                     thumbnail = xml.getChildData(item, mediaNS, 'thumbnail', 'url')
                     pubDate = xml.getChildData(item, cimNS, 'origAirDate', isRequired=False)
                     if (not pubDate):
