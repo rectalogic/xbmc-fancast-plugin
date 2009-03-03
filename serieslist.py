@@ -42,7 +42,7 @@ class SeriesList:
             totalItems = len(items)
             for item in items:
                 try:
-                    title = xml.getChildData(item, None, 'title')
+                    title = (xml.getChildData(item, None, 'title')).encode("utf-8")
                     feedUrl = xml.getChildData(item, None, 'link')
                     url = sys.argv[0] + "?" + urllib.urlencode({'module': 'episodelist',
                                                                 'title': title,
